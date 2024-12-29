@@ -1,5 +1,5 @@
 /* General Reset */
-body, h1, p, ul, li, a {
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -12,37 +12,34 @@ body {
     line-height: 1.6;
 }
 
-/* Full-Width Image */
-.full-width-image img {
+
+
+/* header Section */
+.header {
+    text-align: center;
     width: 100%;
-    height: auto;
-    display: block;
 }
-
-/* Hero Section */
-.hero {
-    background: #f4f4f4;
-    color: black;
+.header-background {
+    background-color: #f4f4f4;
     padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.navbar {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-.nav-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-/* Buttons */
 .button-container {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
 }
+
+/* Buttons */
 .cta-btn {
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,10 +76,77 @@ body {
     background-color: #0056b3; /* Slightly darker blue */
 }
 
+/* Checkout Section */
+.checkout-section {
+    background-color: #f4f4f4;
+    padding: 30px 20px;
+    text-align: center;
+}
+.checkout-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.checkout-list {
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.8;
+    list-style: disc;
+    padding-left: 20px;
+}
+.farewell-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
 /* Footer */
 .footer {
     text-align: center;
     padding: 10px 0;
     background: #333;
     color: white;
+}
+
+.reduced-margin {
+    margin: 0; /* Adjust the value as needed */
+    /* Full-Width Image */
+    width: 100%;
+    aspect-ratio: 1;
+    display: block;
+}
+/* Full screen width on mobile devices */
+@media (max-width: 768px) {
+    .reduced-margin {
+        width: 100%;
+    }
+}
+
+/* Half screen width on larger screens */
+@media (min-width: 769px) {
+    .reduced-margin {
+        width: 50%;
+    }
+}
+
+/* WiFi Section */
+#wifi-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f4f4f4; /* Optional: Add a background color if needed */
+    padding: 8px; /* Add padding for better spacing */
+}
+
+#wifi-section img {
+    max-width: 300px; /* Limit the QR code image size */
+    margin: 0px 0; /* Add space around the image */
+}
+
+#wifi-section p {
+    margin: 10px 0;
+    font-size: 18px;
 }
