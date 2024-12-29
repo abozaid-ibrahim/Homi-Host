@@ -1,5 +1,5 @@
 /* General Reset */
-body, h1, h2, h3, p, ul, li, a {
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -8,20 +8,27 @@ body, h1, h2, h3, p, ul, li, a {
 }
 body {
     font-family: Arial, sans-serif;
+    text-align: center; /* Align everything center */
     line-height: 1.6;
+}
+
+/* Full-Width Image */
+.full-width-image img {
+    width: 100%;
+    height: auto;
 }
 
 /* Hero Section */
 .hero {
-    background: url('assets/hero-image.jpg') no-repeat center/cover;
-    color: white;
+    background: #f4f4f4;
+    color: black;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
 }
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
 }
 .nav-links li {
@@ -29,12 +36,21 @@ body {
     margin: 0 10px;
 }
 .cta-btn {
-    background-color: #47ff47;
+    background-color: #25d366;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 20px;
     display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cta-btn .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* Image Section */
@@ -46,34 +62,13 @@ body {
 .image-container {
     display: flex;
     justify-content: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
-}
-.image-container div {
-    text-align: center;
-    max-width: 300px;
 }
 .image-container img {
-    max-width: 100%;
+    max-width: 300px;
     border-radius: 10px;
-}
-
-/* Sections */
-.section {
-    padding: 50px 20px;
-    text-align: center;
-}
-.service-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    width: 200px;
-    text-align: left;
 }
 
 /* Footer */
