@@ -1,5 +1,5 @@
 /* General Reset */
-body, h1, h2, p, ul, li, a {
+body, h1, p, ul, li, a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -8,7 +8,7 @@ body, h1, h2, p, ul, li, a {
 }
 body {
     font-family: Arial, sans-serif;
-    text-align: center; /* Align everything center */
+    text-align: center; /* Center all text */
     line-height: 1.6;
 }
 
@@ -23,7 +23,6 @@ body {
 .hero {
     background: #f4f4f4;
     color: black;
-    text-align: center;
     padding: 50px 20px;
 }
 .navbar {
@@ -36,40 +35,48 @@ body {
     display: inline;
     margin: 0 10px;
 }
-.cta-btn {
-    background-color: #25d366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-.cta-btn .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
 
-/* Image Section */
-.image-section {
-    background-color: #f4f4f4;
-    padding: 30px 20px;
-    text-align: center;
-}
-.image-container {
+/* Buttons */
+.button-container {
     display: flex;
     justify-content: center;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 20px;
 }
-.image-container img {
-    max-width: 300px;
-    border-radius: 10px;
+.cta-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.whatsapp-btn:hover {
+    background-color: #1EBE5A; /* Slightly darker green */
+}
+
+/* Directions Button */
+.directions-btn {
+    background-color: #007BFF; /* Blue for directions */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.directions-btn:hover {
+    background-color: #0056b3; /* Slightly darker blue */
 }
 
 /* Footer */
